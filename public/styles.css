@@ -1,0 +1,87 @@
+:root{
+  --blue-color: #3D83F7;
+  --gray-color: #262629;
+}
+body{
+  background-color: black;
+  color: white;
+}
+
+.messageMainDiv{
+  margin-bottom: 2%;
+}
+
+.content{
+  font-size: large;
+}
+.client{
+  width: fit-content;
+  margin-left: auto;
+  color: white;
+  border: solid var(--blue-color);
+  background-color: var(--blue-color);
+  padding: 6px;
+  border-radius: 15px;
+}
+.other{
+  width: fit-content;
+  border: solid var(--gray-color);
+  background-color: var(--gray-color);
+  padding: 6px;
+  border-radius: 15px;
+}
+
+.tooltip{
+  display: none;
+  font-size: small;
+}
+.message:hover .tooltip{
+  display: block;
+}
+
+.messageBar{
+  width: 95%;
+  bottom: 0;
+  left: 2.5%;
+  position: fixed;
+  height: 6%;
+  background: none;
+}
+input[type=text]{
+  background-color: black;
+  color: white;
+  border: 1px gray solid;
+  border-radius: 30px;
+  width: 90%;
+  height: 80%;
+  font-size: large;
+}
+input[type=file]{
+  display: none;
+}
+#fileinpwrap{
+  background-color: black;
+  color: white;
+  border: 1px gray solid;
+  border-radius: 30px;
+  width: 5%;
+  font-size: xx-large;
+  text-align: center;
+  position: fixed;
+  bottom: 1%;
+  right: 5%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: darkgray;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+
+embed{
+  width: 50%;
+}

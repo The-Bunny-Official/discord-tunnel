@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Tunnel</title>
+    <link rel="icon" type="image/x-icon" href="../public/image.png">
+    <link rel="stylesheet" href="../public/styles.css">
+    <script src="../public/scripts.js"></script>
+  </head>
+  <body onload="beginEvent()">
+    
+    <div class="messageMainDiv" id="updateMe">
+      <%- content %>
+    </div>
+    
+    <br><br>
+    <span id="anchor"></span>
+    
+    <form method="post" action="/api/send" class="messageBar">
+      <input type="text" id="messageInput" name="message" placeholder="Message" onchange="changeEventFired()" required />
+    </form>
+    
+    <form method="post" action="/api/image-upload" class="fileUpload" enctype="multipart/form-data">
+      <label for="fileinp" class="custom-file-upload" id="fileinpwrap">
+          +
+      </label>
+      <input type="file" accept="image/*" name="file" id="fileinp" onchange="form.submit()">
+    </form>
+  </body>
+</html>
